@@ -10,8 +10,8 @@ import cv2
 
 np.random.seed(1000)
 models_dir = './models'
-TrainingSetPath = '../ReducedDataSet/TrainingSet'
-TestSetPath = '../ReducedDataSet/TestSet'
+TrainingSetPath = './BoatsRepo/ReducedDataSet/TrainingSet'
+TestSetPath = './BoatsRepo/ReducedDataSet/TestSet'
 
 def buildTrainingSet(TrainingSetPath):
     labels_name = next(os.walk(TrainingSetPath))[1]   # Lista delle directory in 'path'

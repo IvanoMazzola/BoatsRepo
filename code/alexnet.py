@@ -179,10 +179,10 @@ def AlexNet(input_shape, num_classes):
     return model
 
 def main():
-    x_train, y_train = training(TrainingSetPath,3)
-    x_test, y_test = test(TestSetPath,3)
+    x_train, y_train = training(TrainingSetPath,5)
+    x_test, y_test = test(TestSetPath,5)
     input_shape = (x_train.shape[1], x_train.shape[2], 3)
-    model = AlexNet(input_shape,3)
+    model = AlexNet(input_shape,5)
 # (5) Train
     model.fit(x_train, y_train, batch_size=32, epochs=5, verbose=1, \
     validation_split=0.2, shuffle=True)
